@@ -1,4 +1,4 @@
-package com.example.bizzylink.dto;
+package com.example.bizzylink.model.dto;
 
 import org.jetbrains.annotations.NotNull;
 

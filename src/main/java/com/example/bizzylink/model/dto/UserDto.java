@@ -1,4 +1,4 @@
-package com.example.bizzylink.dto;
+package com.example.bizzylink.model.dto;
 
 public class UserDto {
     private Long id;
