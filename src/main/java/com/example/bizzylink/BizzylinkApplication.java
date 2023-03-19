@@ -14,7 +14,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableScheduling
 @EnableConfigurationProperties
-@EntityScan("com.example.bizzylink")
 public class BizzylinkApplication {
 
     public static void main(String[] args) {
