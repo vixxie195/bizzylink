@@ -1,6 +1,9 @@
 package com.example.bizzylink.controller;
+import com.example.bizzylink.model.dto.UserSignUpRequestDTO;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import com.example.bizzylink.service.UserService;
@@ -12,15 +15,15 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-//
-//    @Autowired
-//    private PasswordEncoder passwordEncoder;
 
-//    @PostMapping("/signup")
-//    public ResponseEntity<String> signUp(@RequestBody UserDto userDto) {
-//        userService.signUp(userDto);
-//        return new ResponseEntity<>("User registered successfully", HttpStatus.OK);
-//    }
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+    @PostMapping("/signup")
+    public ResponseEntity<String> signUp(@RequestBody UserSignUpRequestDTO userDto) {
+        userService.signUp(userDto);
+        return new ResponseEntity<>("User registered successfully", HttpStatus.OK);
+    }
 //
 //    @PostMapping("/login")
 //    public ResponseEntity<String> login(@RequestBody LoginDto loginDto) {
