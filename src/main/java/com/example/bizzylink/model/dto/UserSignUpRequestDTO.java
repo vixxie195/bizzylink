@@ -14,10 +14,10 @@ public class UserSignUpRequestDTO {
     private String username;
 
     @NotBlank(message = "First name cannot be empty")
-    private String FName;
+    private String firstName;
 
     @NotBlank(message = "Last name cannot be empty")
-    private String LName;
+    private String lastName;
 
     @NotBlank(message = "Email cannot be empty")
     @Email(message = "Invalid email")

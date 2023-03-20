@@ -14,33 +14,33 @@ public class User {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private long idUser;
+    private long id;
 
     @Column
-    private String FName;
+    private String firstName;
 
     @Column
-    private String LName;
+    private String lastName;
 
     @Column(unique = true)
     private String username;
 
     @Column(unique = true)
-    private String Email;
+    private String email;
 
     @Column
-    private String Password;
+    private String password;
 
     @Column
-    private String ProfilePhote;
+    private String profilePhoto;
 
     @Column
     private boolean isBusinessUser;
 
     @Column
-    private int businessIdBusiness;
+    private int businessId;
 
     @Column
-    private int phoneNumberIdNumber;
+    private int phoneNumberId;
 
 }
